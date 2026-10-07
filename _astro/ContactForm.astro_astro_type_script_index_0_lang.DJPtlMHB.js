@@ -1,0 +1,1 @@
+var e=document.querySelector(`[data-subject-select]`),t=new URLSearchParams(window.location.search).get(`emne`),n=e&&t?[...e.options].find(e=>e.dataset.key===t):void 0;e&&n&&(e.value=n.value);
